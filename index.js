@@ -5,10 +5,14 @@ const app = express();
 
 app.use(express.json());
 
-app.listen( () => {
-    console.log(`Server Started at ${3000}`)
-})
 
+
+const port = process.env.PORT || 3000;
+
+// Listen on `port` and 0.0.0.0
+app.listen(port, "0.0.0.0", function () {
+  // ...
+});
 
 
 // including mongodb
