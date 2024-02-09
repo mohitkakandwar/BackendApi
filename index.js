@@ -5,7 +5,7 @@ const app = express();
 
 app.use(express.json());
 
-app.listen(3000, () => {
+app.listen( () => {
     console.log(`Server Started at ${3000}`)
 })
 
