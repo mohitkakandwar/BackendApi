@@ -27,6 +27,6 @@ database.once('connected', () => {
 
 // including routes
 const routes = require('./routes/routes');
-app.use('/api', routes.get());
+app.use('/api', routes);
 
 
