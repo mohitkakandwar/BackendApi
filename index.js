@@ -9,6 +9,10 @@ app.listen( () => {
     console.log(`Server Started at ${3000}`)
 })
 
+app.get("/",(req,res)=>{
+res.send("Hi,i am live");
+});
+
 // including mongodb
 
 require('dotenv').config();
